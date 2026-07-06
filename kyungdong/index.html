@@ -1,154 +1,287 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원가입</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="경동 클론코딩" />
+    <meta name="keywords" content="html, css, javascript" />
+    <meta name="author" content="홍길동" />
+
+    <meta property="og:url" content="배포한 dohome url  or github" />
+    <meta property="og:title" content="경동" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="카카오톡에보여지는이미지 ./" />
+    <meta property="og:description" content="카카톡에 보여지는 설명" />
+
+    <title>경동 클론코딩</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.3/xeicon.min.css" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
 </head>
+
 <body>
     <div id="wrap">
+        <!-- 오른쪽 사이드 메뉴 (스크롤 고정) -->
+        <div class="side-menu">
+            <ul>
+                <li><a href="#" class="active">MAIN</a></li>
+                <li><a href="#">BUSINESS</a></li>
+                <li><a href="#">TECHNOLOGY</a></li>
+                <li><a href="#">PUBLICATIONS</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </div>
+
+        <!-- ===== HEADER ===== -->
         <header id="header">
             <div class="inner">
-                <h1 class="logo"><a href="#">100 x 50</a></h1>
-                <nav class="gnb">
-                    <ul>
-                        <li><a href="#">MainMenu1</a></li>
-                        <li><a href="#">MainMenu2</a></li>
-                        <li><a href="#">MainMenu3</a></li>
-                        <li><a href="#">MainMenu4</a></li>
-                        <li><a href="#">MainMenu5</a></li>
-                        <li><a href="#">MainMenu6</a></li>
+                <h1>
+                    <a href="#">
+                        <img src="images/logo_pc.png" alt="경동 로고" />
+                    </a>
+                </h1>
+                <nav class="nav">
+                    <ul class="gnb">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">사업분야</a></li>
+                        <li><a href="#">기술혁신</a></li>
+                        <li><a href="#">홍보센터</a></li>
                     </ul>
                 </nav>
-                <ul class="top-menu">
-                    <li><a href="#">채용공고</a></li>
-                    <li><a href="#">회사정보</a></li>
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">고객센터</a></li>
-                </ul>
+                <div class="header-util">
+                    <a href="#" class="lang active">KOR</a>
+                    <a href="#" class="lang">ENG</a>
+                    <button type="button" class="btn-menu">
+                        <i class="xi-bars"></i>
+                    </button>
+                </div>
             </div>
         </header>
 
-        <div id="subVisual">
-            <h2>회원가입</h2>
-        </div>
+        <!-- ===== HERO ===== -->
+        <section id="hero">
+            <div class="hero-inner">
+                <h2>Energy-based industry</h2>
+                <p>광산 40년! 석탄산업은 국가 경제개발의 기반이었습니다.</p>
+                <a href="#" class="btn-learn">Learn More &gt;</a>
+            </div>
 
-        <main id="content">
-            <section class="join">
-                <div class="join-title">
-                    <h3>회원 정보 입력</h3>
-                    <span><em>*</em> 필수입력 항목</span>
+            <!-- 좌우 화살표 -->
+            <div class="hero-arrows">
+                <button type="button" class="btn-prev">
+                    <i class="xi-angle-left"></i>
+                </button>
+                <button type="button" class="btn-next">
+                    <i class="xi-angle-right"></i>
+                </button>
+            </div>
+
+
+
+            <!-- 스크롤 인디케이터 -->
+            <div class="scroll-indicator">
+                <img src="images/scroll.png" alt="scroll down" />
+            </div>
+        </section>
+
+        <!-- ===== CONTENT ===== -->
+        <main id="content" class="main">
+            <!-- ===== BUSINESS ===== -->
+            <section class="con business">
+                <div class="inner">
+                    <h2>BUSINESS</h2>
+                    <p class="sub-txt">고객이 신뢰하는 글로벌 에너지 자원 선도 기업</p>
+                    <ul class="biz-list">
+                        <li>
+                            <div class="img-box">
+                                <img src="images/sec01_img01.jpg" alt="국내자원개발" />
+                            </div>
+                            <h3>국내자원개발</h3>
+                            <h4>Domestic resource</h4>
+                            <p>경동은 수십년간 축적된 경험과 광산운영 선진의 기술력을 보유하고 있습니다.</p>
+                        </li>
+                        <li>
+                            <div class="img-box">
+                                <img src="images/sec01_img02.jpg" alt="해외자원개발" />
+                            </div>
+                            <h3>해외자원개발</h3>
+                            <h4>Oversea resource</h4>
+                            <p>호주, 인도네시아를 거쳐 해외자원개발에 끊임없는 노력을 하고 있습니다.</p>
+                        </li>
+                        <li>
+                            <div class="img-box">
+                                <img src="images/sec01_img03.jpg" alt="엔지니어링사업" />
+                            </div>
+                            <h3>엔지니어링사업</h3>
+                            <h4>Engineering</h4>
+                            <p>축적된 기술력과 지속적인 기술개발로 광산설비설계 및 제작, 각종 Plant 설계 및 시공 기술을 보유하고 있습니다.</p>
+                        </li>
+                        <li>
+                            <div class="img-box">
+                                <img src="images/sec01_img04.jpg" alt="임대사업" />
+                            </div>
+                            <h3>임대사업</h3>
+                            <h4>Building Lease</h4>
+                            <p>쾌적한 시드환경, 우수한 교통접근성은 경동빌딩의 자랑입니다.</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-more">View More</a>
                 </div>
+            </section>
 
-                <form action="#" method="post">
-                    <fieldset>
-                        <legend>회원 정보 입력</legend>
-
-                        <div class="form-row">
-                            <label for="userName">이름 <em>*</em></label>
-                            <div class="field">
-                                <input type="text" id="userName" placeholder="홍길동">
+            <!-- ===== PUBLIC ===== -->
+            <section class="con public">
+                <div class="inner">
+                    <h2>TECHNOLOGICAL INNOVATION</h2>
+                    <ul class="tech-list">
+                        <li>
+                            <div class="img-box">
+                                <img src="images/sec02_img01.jpg" alt="Technology" />
+                                <div class="overlay">
+                                    <h3>경동의 신기술</h3>
+                                    <h4>Technology</h4>
+                                    <div class="arrow-icon">
+                                        <img src="images/sec02_arr.png" alt="arrow" />
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="form-row">
-                            <label for="birth">생년월일 <em>*</em></label>
-                            <div class="field">
-                                <input type="text" id="birth" placeholder="2024.02.29">
+                            <p class="desc">경동은 지속적인 기술개발과 투자로 국내광산<br>최고의 기술력을 자랑하고 있습니다.</p>
+                            <a href="#" class="btn-view">View More</a>
+                        </li>
+                        <li>
+                            <div class="img-box">
+                                <img src="images/sec02_img02.jpg" alt="A.B.C Safety" />
+                                <div class="overlay">
+                                    <h3>광산안전시스템</h3>
+                                    <h4>A.B.C Safety</h4>
+                                    <div class="arrow-icon">
+                                        <img src="images/sec02_arr.png" alt="arrow" />
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                            <p class="desc">거대한 자연을 상대로 운영되는 광산에서의 안전은<br>아무리 강조해도 지나침이 없을 것입니다.</p>
+                            <a href="#" class="btn-view">View More</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-                        <div class="form-row">
-                            <label for="gender">성별 <em>*</em></label>
-                            <div class="field">
-                                <input type="text" id="gender" placeholder="남/여">
-                            </div>
-                        </div>
-
-                        <div class="form-row line">
-                            <label for="userId">아이디 <em>*</em></label>
-                            <div class="field wide">
-                                <input type="text" id="userId" placeholder="아이디">
-                                <button type="button">중복확인</button>
-                                <span>중복확인 6자 이상(한글/특수문자 불가)</span>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <label for="password">비밀번호 <em>*</em></label>
-                            <div class="field wide">
-                                <input type="password" id="password" placeholder="비밀번호6자리">
-                                <span>영문, 숫자, 특수문자를 혼합하여 8~15자로 사용 합니다.공백은 사용이 불가합니다.</span>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <label for="passwordCheck">비밀번호 <em>*</em></label>
-                            <div class="field">
-                                <input type="password" id="passwordCheck" placeholder="비밀번호6자리">
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <label for="emailId">이메일 <em>*</em></label>
-                            <div class="field email-field">
-                                <input type="text" id="emailId" placeholder="전화번호 앞 3자리">
-                                <b>@</b>
-                                <input type="text" title="이메일 주소" placeholder="이메일주소">
-                                <select title="이메일 도메인 선택">
-                                    <option>기타(직접입력)</option>
-                                    <option>naver.com</option>
-                                    <option>gmail.com</option>
-                                    <option>daum.net</option>
-                                </select>
-                                <button type="button">중복확인</button>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <label for="post">배송주소(선택)</label>
-                            <div class="field address-field">
-                                <input type="text" id="post">
-                                <button type="button">우편번호찾기</button>
-                                <input type="text" title="상세주소">
-                            </div>
-                        </div>
-
-                        <div class="agree-row line">
-                            <strong>eKOLON 멤버십<br>정보 수신 동의</strong>
-                            <div>
-                                <p>회원님께 제공되는 공지, 이벤트 소식, 포인트 정보, 행사, 신상품 소개 등의 다양한 정보 안내를 받으시겠습니까?</p>
-                                <label><input type="checkbox"> 이메일 수신동의</label>
-                                <label><input type="checkbox"> SMS 수신 동의</label>
-                            </div>
-                        </div>
-
-                        <div class="agree-row">
-                            <strong>사이트<br>정보 수신 동의</strong>
-                            <div>
-                                <label><input type="checkbox"> 이메일을 통한 상품 및 이벤트 정보 수신에 동의합니다.</label>
-                            </div>
-                        </div>
-
-                        <div class="agree-row">
-                            <strong>관심브랜드</strong>
-                            <div>
-                                <p>선택하신 브랜드의 상품 및 다양한 이벤트 정보를 받으실 수 있습니다.</p>
-                            </div>
-                        </div>
-
-                        <div class="btn-wrap">
-                            <button type="reset">취소</button>
-                            <button type="submit">확인</button>
-                        </div>
-                    </fieldset>
-                </form>
+            <!-- ===== ABOUT ===== -->
+            <section class="con about">
+                <div class="inner">
+                    <div class="about-left">
+                        <span class="cate">사회공헌</span>
+                        <h2>PUBLIC RELATIONS</h2>
+                        <p class="desc">
+                            (주)경동은 나눔문화, 기업의 사회공헌, 자원봉사 등을 통한<br>
+                            지역 네트워크 구축과 사회연대의식 함양과 소외계층<br>
+                            삶의 질 향상을 위해 적극 노력하고 있습니다.
+                        </p>
+                        <a href="#" class="btn-more">View More</a>
+                    </div>
+                    <div class="about-right">
+                        <ul class="volunteer-list">
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/sec03_img01.jpg" alt="하천정화" />
+                                </div>
+                                <span class="txt">하천정화</span>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/sec03_img02.jpg" alt="도로정화활동" />
+                                </div>
+                                <span class="txt">도로정화활동</span>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/sec03_img03.jpg" alt="쌀나눔봉사" />
+                                </div>
+                                <span class="txt">쌀나눔봉사</span>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/sec03_img04.jpeg" alt="연탄나눔봉사" />
+                                </div>
+                                <span class="txt">연탄나눔봉사</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </main>
 
-        <footer id="footer"></footer>
+        <!-- ===== FOOTER ===== -->
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="inner">
+                    <div class="ft-left">
+                        <h2>ABOUT<br>KYUNGDONG</h2>
+                        <p class="desc">서민연료인 연탄에서 신재생 에너지까지 에너지를 통해<br>따뜻한 삶의 공간 창조 바로 경동이 함께합니다.</p>
+                        <a href="#" class="btn-learn">Learn More &gt;</a>
+                    </div>
+                    <div class="ft-right">
+                        <ul>
+                            <li class="orange">
+                                <a href="#">
+                                    <div class="icn"><img src="images/main_foot_icn01.png" alt="CEO 인사말" /></div>
+                                    <h3>CEO 인사말</h3>
+                                    <p>CEO's Greetings</p>
+                                </a>
+                            </li>
+                            <li class="navy">
+                                <a href="#">
+                                    <div class="icn"><img src="images/main_foot_icn02.png" alt="경영이념" /></div>
+                                    <h3>경영이념</h3>
+                                    <p>Management Philosophy</p>
+                                </a>
+                            </li>
+                            <li class="blue">
+                                <a href="#">
+                                    <div class="icn"><img src="images/main_foot_icn03.png" alt="관계사" /></div>
+                                    <h3>관계사</h3>
+                                    <p>Business Overview</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+                        <img src="images/top.png" alt="TOP" />
+                        <span>TOP</span>
+                    </button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="inner">
+                    <address>
+                        <p>상호 : (주)경동 사업자등록번호 : 222-81-03192</p>
+                        <p>본사 : 경기도 성남시 분당구 수내로 46번길 4 경동빌딩 11층 TEL : 031-738-1300 FAX : 031-738-1313</p>
+                        <p>㈜경동 삼척광업소 : 강원도 삼척시 도계읍 도계로 512 TEL : 033-541-0071 FAX : 033-541-6003</p>
+                        <p class="copy">Copyright &copy; KYUNGDONG. All Rights Reserved.</p>
+                    </address>
+                </div>
+            </div>
+        </footer>
     </div>
+    <script>
+        window.addEventListener('scroll', function() {
+            const sideMenu = document.querySelector('.side-menu');
+            const mainContent = document.querySelector('#content');
+            
+            // content가 존재하는 경우에만 실행
+            if (mainContent && sideMenu) {
+                const contentTop = mainContent.offsetTop;
+                // 스크롤바의 Y 위치가 #content의 상단 오프셋에 도달하면 dark 클래스 추가
+                if (window.scrollY >= contentTop - 100) {
+                    sideMenu.classList.add('dark');
+                } else {
+                    sideMenu.classList.remove('dark');
+                }
+            }
+        });
+    </script>
 </body>
+
 </html>

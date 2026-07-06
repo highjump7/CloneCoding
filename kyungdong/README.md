@@ -62,19 +62,11 @@ kyungdong-clone/
 
 > 실제 폴더명과 파일명은 업로드한 프로젝트 구조에 맞게 수정할 수 있습니다.
 
-## 실행 방법
+## 라이브 실행
 
-1. 저장소를 클론합니다.
+1. 웹사이트 주소
 
-```bash
-git clone https://github.com/사용자아이디/저장소명.git
-```
-
-2. 프로젝트 폴더로 이동합니다.
-
-```bash
-cd 저장소명
-```
+https://highjump7.github.io/CloneCoding/kyungdong/
 
 3. `index.html` 파일을 브라우저에서 실행합니다.
 
